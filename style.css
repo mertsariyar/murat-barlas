@@ -270,6 +270,12 @@ main {
       display: block;
       text-align: center;
   }
+  body {
+    background-image: url('/bg2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
   
   .video {
       width: 90%;
