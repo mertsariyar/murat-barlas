@@ -66,3 +66,16 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var videos = document.querySelectorAll('.video');
+
+    videos.forEach(function(video) {
+        video.addEventListener('click', function() {
+            if (!video.src) {
+                video.src = video.getAttribute('data-src');
+            }
+        });
+    });
+});
